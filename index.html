@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caesar's weblog</title>
+  </head>
+  <body>
+    <header>
+      Black Lives Matter.
+      <a
+        href="https://support.eji.org/give/153413/#!/donation/checkout"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Support the Equal Justice Initiative.</a
+      >
+    </header>
+
+    <main>
+      <div class="container">
+        <div id="fibonacci"></div>
+      </div>
+    </main>
+
+    <footer>
+      <a
+        href="https://beian.miit.gov.cn"
+        rel="noopener noreferrer"
+        target="_blank"
+        >苏ICP备2021012928号-1</a
+      >
+    </footer>
+  </body>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header,
+    footer {
+      color: #a0a0a0;
+      background-color: rgb(11, 20, 0);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    footer {
+      font-size: 0.75rem;
+    }
+
+    header a,
+    footer a {
+      color: #a0a0a0;
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      header {
+        display: none;
+      }
+    }
+
+    main {
+      flex-grow: 1;
+      background-color: rgb(127, 0, 0);
+      padding: 3rem 0;
+    }
+
+    main .container {
+      display: flex;
+      width: 1000px;
+      height: 100%;
+      margin: 0 auto;
+    }
+
+    #fibonacci {
+      align-self: center;
+      width: 100%;
+      padding-bottom: 61.8%;
+      background-color: rgba(11, 20, 0, 0.7);
+    }
+
+    /* @media screen and (max-aspect-ratio: 1) {
+      #fibonacci {
+        background-color: red !important;
+      }
+    } */
+  </style>
+</html>
